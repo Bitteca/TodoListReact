@@ -1,0 +1,10 @@
+import React from "react";
+import If from "./If";
+
+export default props => (
+  <If teste={!props.hide}>
+    <button className={"btn btn-" + props.estilo} onClick={props.onclick}>
+      <i className={"fa fa-" + props.icon}></i>
+    </button>
+  </If>
+);
